@@ -129,7 +129,7 @@ const AdminRegister = () => {
                   <div className="links">
                       <ul>
                           <li><Link to='/'>Home</Link></li>
-                          <li><Link to ="/adminLogin">Admin Login</Link></li>
+                          <li><Link to ="/">Admin Login</Link></li>
                       </ul>
                   </div>
               </nav>
