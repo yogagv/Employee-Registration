@@ -68,9 +68,6 @@ const AdminPanel = () => {
                             <th>Email</th>
                             <th>Mobno</th>
                             <th>Created At</th>
-                            <th>Created By</th>
-                            <th>Updated By</th>
-                            <th>Updated Fields</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -86,12 +83,7 @@ const AdminPanel = () => {
                                 minute: "2-digit",
                                 hour12: true
                             })}</td>
-                            <td>{adminData.createdBy?.name} ({adminData.createdBy?.role})</td>
-                            <td>{adminData.updatedBy?.name && adminData.updatedBy?.role 
-                                ? `${adminData.updatedBy.name} (${adminData.updatedBy.role})`
-                                : "Not Updated"}</td>
-                            <td>{adminData.updatedFields?.join(", ") || "No changes"}</td>
-                            </tr>
+                         </tr>
                             </tbody>
                             </table>
                             </div>
