@@ -100,7 +100,7 @@ const AdminLogin = () => {
             toast.success(result.message);
 
             setTimeout(()=>{
-              navigate('/adminPanel');
+              navigate(`/adminPanel/${result.data._id}`);
             },100)
 
         } catch(error) {
