@@ -8,7 +8,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { ToastContainer, toast } from 'react-toastify'
 import { AuthContext } from '../context/AuthContext'
 import { BASE_URL } from '../utils/config'
-import logo from '../assets/Colorful Creative Growth Concept Logo (1).png'
+
 
 const AdminLogin = () => {
 
@@ -115,21 +115,6 @@ const AdminLogin = () => {
 
   return (
     <div>
-
-
-      <nav className='navbar container mx-auto p-4'>
-                        <Link to='/'>
-                        <div className="logo">
-                        <img src={logo} alt="logo"/>
-                        <h1 className='text-4xl'>Mayuras'</h1>
-                        </div>
-                        </Link>
-                        <div className="links">
-                            <ul>
-                                <li><Link to='/'>Home</Link></li>
-                            </ul>
-                        </div>
-                    </nav>
 
     <h1 className='text-center text-4xl mt-5'>Admin Login</h1>
           <div className="form-data flex-2">
