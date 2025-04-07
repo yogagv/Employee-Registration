@@ -1,0 +1,106 @@
+.emptable {
+
+    background-color: #69b2f0;
+    padding: 20px;
+    margin: 2rem auto;
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    
+}
+
+table {
+
+    width: 100%;
+    border-collapse: collapse;
+}
+
+ th {
+
+   padding: 1rem;
+   align-items: center;
+   margin-bottom: 15px;
+   font-size: 1rem;
+   background-color: #6d9bf6;
+   text-transform: uppercase;
+}
+
+td {
+
+    padding: 0.5rem;
+    text-align: center;
+    border-bottom: 1px solid #334155;
+}
+
+.actionbtn {
+
+    font-weight: 600;
+}
+
+.empinfo {
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding: 0.5rem;
+}
+
+.empsearch {
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.emplink {
+
+    font-weight: 600;
+}
+
+/* Simplified approach with just margin adjustments */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.pagination-btn {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    margin: 0 3px; /* Small gap between page numbers */
+}
+
+/* Add extra margin for the Prev and Next buttons */
+.pagination-btn:first-child {
+    margin-right: 15px; /* Large gap after the Prev button */
+}
+
+.pagination-btn:nth-last-child(2) {
+    margin-left: 15px; /* Large gap before the Next button */
+}
+
+.pagination-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.pagination-btn.active-page {
+    background-color: #707dfe;
+    color: white;
+    border-color: #707dfe;
+}
+
+.pagination-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination-info {
+    margin-left: 15px;
+    color: #666;
+}

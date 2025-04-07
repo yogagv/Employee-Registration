@@ -1,0 +1,33 @@
+.form-input select {
+
+    width: 75%;
+    padding: 10px 0px 4px 5px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    color: #7f7f7f;
+    background-color: transparent;
+    box-sizing: border-box;
+    outline: none;
+}
+
+select:focus {
+    
+    border-bottom: 1px solid #6d9bf6;
+  }
+
+  input:focus {
+    border-bottom: 1px solid #6d9bf6;
+  }
+
+  .gender-input .radio-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 11px;
+  }
+  
+  .gender-input label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }  

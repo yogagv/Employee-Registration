@@ -1,0 +1,43 @@
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(90deg, hsla(171, 87%, 67%, 1) 0%, hsla(236, 100%, 72%, 1) 100%);
+    color: #1A1A40;
+    width: 100%;
+    height: max-content;
+}
+
+.logo {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.logo img {
+
+    width: 50%;
+    height: 8vh;
+    margin: 0.2rem;
+} 
+
+nav h1 {
+
+    font-weight: 600;
+}
+
+ul {
+
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 10px;
+    color: #3B1C58;
+    
+}
+
+ul li {
+
+    font-weight: 600;
+}
