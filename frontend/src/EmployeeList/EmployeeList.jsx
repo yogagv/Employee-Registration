@@ -121,7 +121,7 @@ const EmployeeList = () => {
 
 
             setEmployee(res.data.data);
-
+            
             if (res.data.pagination) {
                 setTotalPages(res.data.pagination.totalPages);
                 setEmpCount(res.data.pagination.totalCount);

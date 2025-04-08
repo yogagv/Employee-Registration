@@ -68,7 +68,7 @@ export const getAllEmployees = async (req, res, next) => {
         //Fetch Employees
 
         const employees = await Employee.find(filter).select('-password')
-                                               .sort({[sortVal]: order === 'desc' ? 1 : -1})
+                                               .sort({ [sortVal]: order === 'desc' ? -1 : 1 })
                                                .skip(skipPage)
                                                .limit(parseInt(limit));
 
@@ -82,7 +82,10 @@ export const getAllEmployees = async (req, res, next) => {
          //if no data found
               if(employeeCount === 0) {
 
-                return res.status(404).send({success:false, message:'No employee found!'});
+                return res.status(404).send({success:false, message:'No employee found!', employeeCount: 0,
+                    currentPage: parseInt(page),
+                    totalPages: 0,
+                    data: []});
               
             }                                 
 
