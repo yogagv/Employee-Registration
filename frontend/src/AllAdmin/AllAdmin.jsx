@@ -110,7 +110,7 @@ const AllAdmin = () => {
             <tbody>
               {
                 admin.map((admindata) => (
-                  <tr key={admindata.id}>
+                  <tr key={admindata._id}>
                     <td>{admindata.adminname}</td>
                     <td>{admindata.email}</td>
                     <td>{admindata.mobno}</td>

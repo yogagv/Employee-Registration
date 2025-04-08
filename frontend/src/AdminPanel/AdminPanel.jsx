@@ -5,6 +5,7 @@ import { AuthContext } from '../context/AuthContext'
 import './adminpanel.css'
 import useFetch from '../hooks/useFetch'
 import { BASE_URL } from '../utils/config'
+import Loading from '../Loading/Loading'
 const AdminPanel = () => {
 
   const {user, dispatch} = useContext(AuthContext)
@@ -56,7 +57,7 @@ const AdminPanel = () => {
               </nav>
 
               <h1 className='text-center text-4xl mt-5'>Admin Panel</h1>
-              {loading && <p>Loading</p>}
+              {loading && <Loading />}
                 {error && <p>Error</p>}
                 {!loading && !error && (
 

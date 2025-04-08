@@ -95,7 +95,7 @@ const EmployeePanel = () => {
                             <td>{empData.createdBy?.name} ({empData.createdBy?.role})</td>
                             <td>{empData.updatedBy?.name && empData.updatedBy?.role 
                                 ? `${empData.updatedBy.name} (${empData.updatedBy.role})`
-                                : "Not Updated"}</td>
+                                : "Not updated yet"}</td>
                             <td>{empData.updatedFields?.join(", ") || "No changes"}</td>
                             </tr>
                             </tbody>
