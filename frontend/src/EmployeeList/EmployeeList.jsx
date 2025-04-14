@@ -48,8 +48,10 @@ const EmployeeList = () => {
     useEffect(() => {
         if(empData.length > 0) {
             setEmployee(empData)
+
             const count = empData.filter(emp => emp.role === "employee").length;
             setEmpCount(count);
+            
             setTotalPages(Math.ceil(count / limit));
         }
     }, [empData])
@@ -255,7 +257,7 @@ const EmployeeList = () => {
                                     {employee.length > 0 ? (
                                     
                                         employee.map((empdata) => (
-                                    <tr key={empdata._id}>
+                                        <tr key={empdata._id}>
                                         <td>{empdata.empname}</td>
                                         <td>{<img src={empdata.empImage} alt="Employee Profile" className='w-18 h-18' />}</td>
                                         <td>{empdata.email}</td>

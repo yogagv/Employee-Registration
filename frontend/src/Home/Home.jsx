@@ -16,6 +16,10 @@ const Home = () => {
             <h1 className='text-4xl'>Mayuras'</h1>
             </div>
             </Link>
+            <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            </div>
             <div className="links">
                 <ul>
                     <li><Link to='/'>Home</Link></li>
