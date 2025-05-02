@@ -20,6 +20,7 @@ function App() {
       <Route path="/adminRegister" element={<AdminRegister />} />
       <Route path="/adminLogin" element={<AdminLogin />} />
       <Route path="/adminPanel/:id" element={<AdminPanel />} />
+      <Route path="adminList/adminPanel/:id" element={<AdminPanel />} />
       <Route path="/empLogin" element={< EmployeeLogin/>} />
       <Route path="/empRegister/:id" element={<EmployeeRegister/>} />
       <Route path="/adminList" element={<AllAdmin />} />

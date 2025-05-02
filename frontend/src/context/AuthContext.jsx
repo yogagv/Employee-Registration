@@ -104,12 +104,14 @@ const [state, dispatch] = useReducer(AuthReducer, initialState);
         <AuthContext.Provider
 
         value={{
+
             user: state.user,
             token: state.token,
             role: state.role,
             loading: state.loading,
             error: state.error,
             dispatch,
+        
         }}>
             {children}
 

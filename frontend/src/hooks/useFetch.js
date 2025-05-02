@@ -3,13 +3,12 @@ import {  useEffect, useState } from 'react'
 
 const useFetch = (url) => {          //here url is the parameter because usefetch expects a url
   
- 
-
     const [data, setData] = useState([]);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
   
     useEffect(()=>{
+
         const fetchData = async() => {
             setLoading(true);          //when try to start fetching data make loading as true
 
@@ -20,7 +19,9 @@ const useFetch = (url) => {          //here url is the parameter because usefetc
                 const res = await fetch(url, {
                     
                     headers: {
-                        'Authorization': `Bearer ${token}`
+
+                        'Authorization': `Bearer ${token}`,
+                        'Content-Type': 'application/json'
                     }
                 });
 

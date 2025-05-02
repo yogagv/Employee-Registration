@@ -80,6 +80,7 @@ const AllAdmin = () => {
         <div className="links">
           <ul>
             <li><Link to='/'>Home</Link></li>
+            <li><Link to={`adminPanel/${user._id}`}>Admin Panel</Link></li>
             {user ? (<>
               <p className=''>{user.adminname}</p>
               <li><Link onClick={handleLogout}>Logout</Link></li>
@@ -126,8 +127,7 @@ const AllAdmin = () => {
                     </td>
                   </tr>
                 ))
-
-              }
+              } 
             </tbody>
           </table>
 
